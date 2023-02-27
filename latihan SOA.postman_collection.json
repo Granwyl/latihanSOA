@@ -1,0 +1,257 @@
+{
+	"info": {
+		"_postman_id": "653a4c94-d9fc-4605-8cca-b688c9a1f41e",
+		"name": "latihan SOA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19493667"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "bing chiling",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "john",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "cena",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "cina",
+							"type": "text"
+						},
+						{
+							"key": "nomerhp",
+							"value": "456789",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "bing chiling",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "john",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit profile",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama",
+							"value": "tom",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "baru",
+							"type": "text"
+						},
+						{
+							"key": "nomerhp",
+							"value": "98765",
+							"type": "text"
+						},
+						{
+							"key": "oldpassword",
+							"value": "soa",
+							"type": "text"
+						},
+						{
+							"key": "newpassword",
+							"value": "inf",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/user/test3",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"test3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add friend",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "test3",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "inf",
+							"type": "text"
+						},
+						{
+							"key": "usercari",
+							"value": "test5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/friend",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"friend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete friend",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "test3",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "inf",
+							"type": "text"
+						},
+						{
+							"key": "usercari",
+							"value": "test4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/friend",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"friend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view friend",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "password",
+							"value": "inf",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/friend/test3",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"friend",
+						"test3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
